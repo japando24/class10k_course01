@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>991</width>
+    <height>787</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidgetHouse">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>911</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Avg. Area Income</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Avg. Area House Age</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Avg. Area Number of Rooms</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Avg. Area Number of Bedrooms</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Area Population</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Real Price</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Predicted Price</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>991</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

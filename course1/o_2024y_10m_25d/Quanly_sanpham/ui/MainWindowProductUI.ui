@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>834</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>691</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);
+background-color: rgb(170, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Quản lý sản phẩm</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelWelcome">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>770</y>
+      <width>421</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 255);</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>741</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Chi tiết sản phẩm:</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mã sản phẩm:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tên sản phẩm:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Số lượng:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Đơn giá:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditzMaSanPham">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>361</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditTenSanPham">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>50</y>
+       <width>361</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditSoLuong">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>80</y>
+       <width>361</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditDonGia">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>110</y>
+       <width>361</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>250</y>
+      <width>741</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Chức năng</string>
+    </property>
+    <widget class="QPushButton" name="pushButtonLuuMoi">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>30</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lưu mới</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_save.png</normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_save.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonChinhSua">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>30</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Chỉnh sửa</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_edit.png</normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_edit.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonXoa">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>30</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Xóa</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_delete.png</normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_delete.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonThemMoi">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thêm mới</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_add.png</normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_add.png</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>460</y>
+      <width>751</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>DANH SÁCH SẢN PHẨM</string>
+    </property>
+    <widget class="QTableView" name="dsqp">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>731</width>
+       <height>261</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidgetSanPham">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>741</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Mã sản phẩm</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Tên sản phẩm</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Số lượng</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Đơn giá</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>775</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHeThong">
+    <property name="title">
+     <string>Hệ thống</string>
+    </property>
+    <addaction name="actionThongTinTaiKhoan"/>
+    <addaction name="separator"/>
+    <addaction name="actionDoiMatKhau"/>
+    <addaction name="separator"/>
+    <addaction name="actionLuufile"/>
+    <addaction name="separator"/>
+    <addaction name="actionDocfile"/>
+    <addaction name="separator"/>
+    <addaction name="actionThoatPhanMem"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuTroGiup">
+    <property name="title">
+     <string>Trợ giúp</string>
+    </property>
+    <addaction name="actionHuongDanSuDungPhanMem"/>
+    <addaction name="separator"/>
+    <addaction name="actionGioiThieuPhanMem"/>
+   </widget>
+   <addaction name="menuHeThong"/>
+   <addaction name="menuTroGiup"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionHuongDanSuDungPhanMem">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/DO NHAT BAN/.designer/images/ic_huongdan.png</normaloff>C:/Users/DO NHAT BAN/.designer/images/ic_huongdan.png</iconset>
+   </property>
+   <property name="text">
+    <string>Hướng dẫn sử dụng phần mềm</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionGioiThieuPhanMem">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/DO NHAT BAN/.designer/images/ic_gioithieu.png</normaloff>C:/Users/DO NHAT BAN/.designer/images/ic_gioithieu.png</iconset>
+   </property>
+   <property name="text">
+    <string>Giới thiệu phần mềm</string>
+   </property>
+  </action>
+  <action name="actionThongTinTaiKhoan">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/info_information.png</normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/info_information.png</iconset>
+   </property>
+   <property name="text">
+    <string>Thông tin tài khoản</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionDoiMatKhau">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/changepassword_icon.png</normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/changepassword_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Đổi mật khẩu</string>
+   </property>
+  </action>
+  <action name="actionThoatPhanMem">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_close.png</normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_close.png</iconset>
+   </property>
+   <property name="text">
+    <string>Thoát phần mềm</string>
+   </property>
+  </action>
+  <action name="actionLuufile">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_save.png</normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Lưu file</string>
+   </property>
+  </action>
+  <action name="actionDocfile">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_json.png</normaloff>../../../../../../coding_K23416/Course1_date04Nov2024_day8/Course1/QuanLySanPham/images/images/icon_json.png</iconset>
+   </property>
+   <property name="text">
+    <string>Đọc file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonThemMoi</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditzMaSanPham</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>319</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonThemMoi</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditTenSanPham</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>319</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonThemMoi</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditSoLuong</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>319</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonThemMoi</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditDonGia</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>319</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonThemMoi</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditzMaSanPham</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>319</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
